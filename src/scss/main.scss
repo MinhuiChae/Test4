@@ -36,7 +36,32 @@ body{
         transition: all 1s ease;
         transform-origin: left;
         transform-style: preserve-3d;
+
+        .text{
+            position:absolute;
+            z-index:111;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .text-2,.text-1{
+                font-size: 26px;
+                font-weight: 600;
+                color: fff;
+                text-align: center;
+                backface-visibility: hidden;
+            }
+
+            .text-2{
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
     }
+
 
     .cover::before {
         content: '';
